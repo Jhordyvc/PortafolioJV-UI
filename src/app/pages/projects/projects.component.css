@@ -1,0 +1,117 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    background: #F3F6FD;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 100%;
+}
+div>section{
+    width: 80%;
+    height: 100vh;
+    margin: auto auto; 
+}
+.cabecera{
+    width: 95%;
+    height: 10%;
+    position: relative;
+    margin: auto auto;
+}
+.cabecera>p{
+    font-size: 50px;
+    font-weight: bold;
+    left: 0px;
+    bottom: 0px;
+    position: absolute;
+    margin: 0px;
+    color: #1C2021;
+}
+.cabecera>a{
+    text-decoration: none;
+    color: #9698A5;
+    font-weight: bold;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+.itemCard{
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.itemCard>article{
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px #808B96;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.card>article{
+    display: flex;
+    height: 100%;
+    overflow: hidden;
+}
+.card>article>img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0px 0px 20px #808B96;
+}
+.cardText>article{
+    margin: auto;
+    width: 90%;
+}
+.cardText>article>span{
+    color: #255DEF;
+    font-weight: bold;
+    margin: 0px;
+    font-size: 13px;
+}
+.cardText>article>h1{
+    font-size: 40px;
+    margin: 0px;
+    color: #1C2021;
+}
+.cardText>article>a{
+    display: inline-block;
+    background: #255DEF;
+    border: 0px;
+    color: white;
+    text-decoration: none;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+/*
+section>article{
+    width: 100%;
+    height: auto;
+}
+section>article>h1{
+    font-size: 40px;
+    border:1px solid red;
+    display: inline;
+}
+section>article>a{
+    font-size: 20px;
+    color: violet;
+    display: inline;
+    float: right;
+    bottom: -10px;
+    text-decoration: none;
+    border:1px solid red;
+}*/
+
+

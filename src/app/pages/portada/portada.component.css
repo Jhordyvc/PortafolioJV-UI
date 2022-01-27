@@ -1,0 +1,114 @@
+.body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background: #10111A;
+    display: grid;
+    overflow: hidden;
+}
+.contenedor{
+    width: 30%;
+    height: 70%;
+    margin: auto auto;
+}
+.contenedor>img{
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(-5px -5px 28px #2C3E50);
+    border-radius: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor>h1{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    margin: 0px;
+}
+.contenedor>p{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    margin: 0px;
+}
+.contenedor>ul{
+    width: 45%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    text-align: center;
+    margin-top: 10%;
+}
+.contenedor>ul>li{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.contenedor>ul>li>a{
+    color: white;
+    font-size: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+}
+/**/
+.menu{
+    width: 100vw;
+    height: 50px;
+    background: #10111A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.logo>p{
+    font-size: 30px;
+    margin: 0px;
+}
+.menu>div{
+    width: 85%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.listMenu{
+    width: 100%;
+    height: 100%;
+}
+.listMenu>ul{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+.listMenu>ul>li{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.listMenu>ul>li>a{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    margin: auto auto;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.listMenu>ul>li>a:hover{
+    background: #2C3E50;
+}

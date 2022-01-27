@@ -1,0 +1,54 @@
+.menu{
+    width: 100vw;
+    height: 50px;
+    background: #10111A;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+}
+.logo{
+    width: 100%;
+    height: 100%;
+}
+.logo>p{
+    font-size: 30px;
+    margin: 0px;
+}
+.menu>div{
+    width: 85%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.listMenu{
+    width: 100%;
+    height: 100%;
+}
+.listMenu>ul{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+}
+.listMenu>ul>li{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.listMenu>ul>li>a{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    margin: auto auto;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Nanum Pen Script', cursive;
+}
+.listMenu>ul>li>a:hover{
+    background: #2C3E50;
+}
