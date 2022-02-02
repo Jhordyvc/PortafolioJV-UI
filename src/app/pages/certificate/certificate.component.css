@@ -48,9 +48,10 @@
     border-radius: 30px;
     margin: auto auto;
     display: grid;
-    background: #E5E7E9;
+    background: #10111A;
     grid-template-rows: 60% 40%;
     box-shadow: #10111A 0px 0px 10px;
+    color: whitesmoke;
 }
 .itemCard>section>article>img{
     width: 100%;

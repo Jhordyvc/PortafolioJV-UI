@@ -8,8 +8,8 @@
     overflow: hidden;
 }
 .contenedor{
-    width: 30%;
-    height: 70%;
+    width: 80%;
+    height: 60%;
     margin: auto auto;
 }
 .contenedor>img{
@@ -24,21 +24,21 @@
     margin-right: auto;
 }
 .contenedor>h1{
-    font-size: 80px;
+    font-size: 45px;
     text-align: center;
     color: white;
     font-family: 'Indie Flower', cursive;
     margin: 0px;
 }
 .contenedor>p{
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: white;
     font-family: 'Nanum Pen Script', cursive;
     margin: 0px;
 }
 .contenedor>ul{
-    width: 45%;
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -52,13 +52,13 @@
 }
 .contenedor>ul>li>a{
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     display: block;
     float: left;
     text-align: center;
 }
-/**/
-.menu{
+  /**/
+  .menu{
     width: 100vw;
     height: 50px;
     background: #10111A;
@@ -70,9 +70,10 @@
     width: 100%;
     height: 100%;
 }
-.logo>p{
+.logo>a{
     font-size: 30px;
     margin: 0px;
+    text-decoration: none;
 }
 .menu>div{
     width: 85%;
@@ -82,33 +83,436 @@
     grid-template-columns: 40% 60%;
 }
 .listMenu{
-    width: 100%;
-    height: 100%;
+    display:none;
 }
-.listMenu>ul{
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+ @media (min-width: 768px) {
+    .body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        background: #10111A;
+        display: grid;
+        overflow: hidden;
+    }
+    .contenedor{
+        width: 60%;
+        height: 60%;
+        margin: auto auto;
+    }
+    .contenedor>img{
+        width: 300px;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(-5px -5px 28px #2C3E50);
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor>h1{
+        font-size: 75px;
+        text-align: center;
+        color: white;
+        font-family: 'Indie Flower', cursive;
+        margin: 0px;
+    }
+    .contenedor>p{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+        margin: 0px;
+    }
+    .contenedor>ul{
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        text-align: center;
+        margin-top: 10%;
+    }
+    .contenedor>ul>li{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .contenedor>ul>li>a{
+        color: white;
+        font-size: 50px;
+        display: block;
+        float: left;
+        text-align: center;
+    }  
+    /**/
+    .menu{
+        width: 100vw;
+        height: 50px;
+        background: #10111A;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .logo>a{
+        font-size: 30px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .menu>div{
+        width: 85%;
+        height: 100%;
+        margin: auto auto;
+        display: grid;
+        grid-template-columns: 15% 85%;
+    }
+    .listMenu{
+        width: 100%;
+        height: 100%;
+        display: initial;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }
+  }
+  
+  /* escritorio normales */
+  @media (min-width: 992px) {
+    .body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        background: #67cc15;
+        display: grid;
+        overflow: hidden;
+    }
+    .contenedor{
+        width: 90%;
+        height: 90%;
+        margin: auto auto;
+    }
+    .contenedor>img{
+        width: 250px;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(-5px -5px 28px #2C3E50);
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor>h1{
+        font-size: 80px;
+        text-align: center;
+        color: white;
+        font-family: 'Indie Flower', cursive;
+        margin: 0px;
+    }
+    .contenedor>p{
+        font-size: 40px;
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+    .contenedor>ul{
+        width: 60%;
+        margin: auto;
+        display: block;
+    }
+    .contenedor>ul>li{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .contenedor>ul>li>a{
+        color: white;
+        font-size: 50px;
+        display: block;
+        float: left;
+        text-align: center;
+    }  /**/
+    .menu{
+        width: 100vw;
+        height: 50px;
+        background: #10111A;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .logo>a{
+        font-size: 30px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .menu>div{
+        width: 85%;
+        height: 100%;
+        margin: auto auto;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+    .listMenu{
+        width: 100%;
+        height: 100%;
+        display: initial;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }
+  }
+  
+  /* pantallas grandes */
+  @media (min-width: 1200px) {
+    .body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        background: #10111A;
+        display: grid;
+        overflow: hidden;
+    }
+    .contenedor{
+        width: 80%;
+        height: 80%;
+        margin: auto auto;
+    }
+    .contenedor>img{
+        width: 350px;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(-5px -5px 28px #2C3E50);
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor>h1{
+        font-size: 100px;
+        text-align: center;
+        color: white;
+        font-family: 'Indie Flower', cursive;
+        margin: 0px;
+    }
+    .contenedor>p{
+        font-size: 35px;
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+        margin: 0px;
+        margin-bottom: 30px;
+    }
+    .contenedor>ul{
+        width: 30%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        text-align: center;
+        margin: auto;
+    }
+    .contenedor>ul>li{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .contenedor>ul>li>a{
+        color: white;
+        font-size: 60px;
+        display: block;
+        float: left;
+        text-align: center;
+    }
+    /**/
+    .menu{
+        width: 100vw;
+        height: 50px;
+        background: #10111A;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        overflow: hidden;
+    }
+    .logo{
+        width: 100%;
+        height: 100%;
+    }
+    .logo>a{
+        font-size: 30px;
+        margin: 0px;
+        text-decoration: none;
+    }
+    .menu>div{
+        width: 85%;
+        height: 100%;
+        margin: auto auto;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    .listMenu{
+        width: 100%;
+        height: 100%;
+        display: initial;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }
+@-webkit-keyframes swing
+{
+15%
+{
+-webkit-transform: translateX(4px);
+transform: translateX(4px);
 }
-.listMenu>ul>li{
-    width: 100%;
-    height: 100%;
-    list-style: none;
+30%
+{
+-webkit-transform: translateX(-4px);
+transform: translateX(-4px);
 }
-.listMenu>ul>li>a{
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display: grid;
-    margin: auto auto;
-    text-decoration: none;
-    color: white;
-    font-size: 25px;
-    font-family: 'Nanum Pen Script', cursive;
+50%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
 }
-.listMenu>ul>li>a:hover{
-    background: #2C3E50;
+65%
+{
+-webkit-transform: translateX(-2px);
+transform: translateX(-2px);
 }
+80%
+{
+-webkit-transform: translateX(2px);
+transform: translateX(2px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+@keyframes swing
+{
+15%
+{
+-webkit-transform: translateX(4px);
+transform: translateX(4px);
+}
+30%
+{
+-webkit-transform: translateX(-4px);
+transform: translateX(-4px);
+}
+50%
+{
+-webkit-transform: translateX(1px);
+transform: translateX(1px);
+}
+65%
+{
+-webkit-transform: translateX(-2px);
+transform: translateX(-2px);
+}
+80%
+{
+-webkit-transform: translateX(1px);
+transform: translateX(1px);
+}
+100%
+{
+-webkit-transform: translateX(0);
+transform: translateX(0);
+}
+}
+.swing:hover{
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    cursor: pointer;
+}
+  }
+
+
+

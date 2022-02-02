@@ -10,6 +10,7 @@ import { PrincipalComponent } from './principal/principal.component';
 import { SkillComponent } from './skill/skill.component';
 import { PortadaComponent } from './portada/portada.component';
 
+
 @NgModule({
   declarations: [AboutComponent, ProjectsComponent, CertificateComponent, PrincipalComponent, SkillComponent, PortadaComponent],
   imports: [
