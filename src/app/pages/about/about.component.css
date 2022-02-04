@@ -235,7 +235,7 @@ transform: translateX(0);
     }
     .content>article>.general{
         display: block;
-        font-size: 23px;
+        font-size: 20px;
         font-family: 'M PLUS Code Latin', sans-serif;
         color: #10111A;
     }

@@ -1,3 +1,4 @@
+/**/
 .menu{
     width: 100vw;
     height: 50px;
@@ -10,9 +11,10 @@
     width: 100%;
     height: 100%;
 }
-.logo>p{
+.logo>a{
     font-size: 30px;
     margin: 0px;
+    text-decoration: none;
 }
 .menu>div{
     width: 85%;
@@ -24,6 +26,7 @@
 .listMenu{
     width: 100%;
     height: 100%;
+    display: initial;
 }
 .listMenu>ul{
     width: 100%;

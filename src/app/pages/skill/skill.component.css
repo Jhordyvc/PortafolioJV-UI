@@ -16,26 +16,47 @@
     margin: auto;
 }
 .body>div>section>h1{
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     font-family: 'Indie Flower', cursive;
     margin-top: auto;
     margin-bottom: auto;
 }
 .content{
-    display: flex;
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.TypeSkills{
+    width: 60%;
+    height: 100%;
+    margin: auto auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(24%,2fr));
+    gap: 3%;
+}
+.TypeSkills>button{
+    font-size: 20px;
+    border-radius: 15px;
+    background: #2C3E50;
+    border: 0px;
+    color: white;
+}
+.TypeSkills>button>span{
+    display: block;
+    font-size: 18px;
+    font-family: 'Nanum Pen Script', cursive;
 }
 .contentSkills{
     width: 90%;
     height: 90%;
     margin: auto auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(20%,2fr));
-    grid-template-rows: 25% 25% 25%;
-    gap: 1%;
+    grid-template-columns: repeat(auto-fill,minmax(23%,1fr));
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    gap: 2% ;
 }
 .contentSkills>div{
-    font-size: 150px;
+    font-size: 50px;
     display: flex;
     border-radius: 15px;
     background: #e5e7e913;
@@ -112,7 +133,7 @@ section#timeline {
   }
   section#timeline article {
     width: 100%;
-    margin: 0 0 20px 0;
+    margin: 0 0 85px 0;
     position: relative;
   }
   section#timeline article:after {
@@ -121,22 +142,22 @@ section#timeline {
     clear: both;
   }
   section#timeline article div.inner {
-    width: 40%;
+    width: 36%;
     float: left;
     margin: 5px 0 0 0;
-    border-radius: 6px;
+    border-radius: 10px;
   }
   section#timeline article div.inner span.date {
     display: block;
-    width: 80px;
-    height: 70px;
+    width: 60px;
+    height: 50px;
     padding: 5px 0;
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 52%;
     margin: 0 0 0 -40px;
     border-radius: 100%;
-    font-size: 70px;
+    font-size: 50px;
     font-family: 'Nanum Pen Script', cursive;
     background: #2C3E50;
     color: rgb(255, 255, 255);
@@ -148,19 +169,19 @@ section#timeline {
     text-align: center;
   }
   section#timeline article div.inner span.date span.day {
-    font-size: 20px;
+    font-size: 15px;
   }
   section#timeline article div.inner span.date span.month {
-    font-size: 20px;
+    font-size: 15px;
   }
   section#timeline article div.inner span.date span.year {
-    font-size: 20px;
+    font-size: 15px;
   }
   section#timeline article div.inner h2 {
     padding: 15px;
     margin: 0;
     color: #fff;
-    font-size: 20px;
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: -1px;
     border-radius: 6px 6px 0 0;
@@ -176,6 +197,7 @@ section#timeline {
     transform: rotate(-45deg);
   }
   section#timeline article div.inner p {
+    display: none;
     padding: 15px;
     margin: 0;
     font-size: 14px;
@@ -218,4 +240,739 @@ section#timeline {
   }
   section#timeline article:nth-child(5) div.inner h2:after {
     background: #9b59b6;
+  }
+@media (min-width: 768px) {
+    .body{
+      width: 100vw;
+      height: 200vh;
+      background: #10111A;
+      display: grid;
+      grid-template-rows: 50% 50%;
+  }
+  .body>div{
+      display: grid;
+      grid-template-rows: 15% 85%;
+  }
+  .cabecera{
+      display: flex;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+  }
+  .body>div>section>h1{
+      font-size: 35px;
+      color: white;
+      font-family: 'Indie Flower', cursive;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .content{
+      display: grid;
+      grid-template-rows: 10% 90%;
+  }
+  .TypeSkills{
+      width: 50%;
+      height: 100%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(24%,2fr));
+      gap: 3%;
+  }
+  .TypeSkills>button{
+      font-size: 30px;
+      border-radius: 15px;
+      background: #2C3E50;
+      border: 0px;
+      color: white;
+  }
+  .TypeSkills>button>span{
+      display: block;
+      font-size: 20px;
+      font-family: 'Nanum Pen Script', cursive;
+  }
+  .contentSkills{
+      width: 90%;
+      height: 90%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(20%,2fr));
+      grid-template-rows: 23% 23% 23% 23%;
+      gap: 1% ;
+  }
+  .contentSkills>div{
+      font-size: 100px;
+      display: flex;
+      border-radius: 15px;
+      background: #e5e7e913;
+  }
+  .contentSkills>div>i{
+      color:rgb(209, 0, 0);
+      margin: auto auto;
+  }
+  .contentSkills>div:nth-child(1) i {
+      color:rgb(209, 0, 0);
+    }
+    .contentSkills>div:nth-child(2) i {
+      color: #0041e4;
+    }
+    .contentSkills>div:nth-child(3) i {
+      color: #ee710b;
+    }
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+    }
+    30%
+    {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+    }
+    50%
+    {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    }
+    65%
+    {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    }
+    80%
+    {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+    }
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
+    }
+  
+  section#timeline {
+      width: 90%;
+      margin: auto auto;
+      position: relative;
+    }
+    section#timeline:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin: 0 0 0 -1px;
+      width: 2px;
+      height: 100%;
+      background: #2C3E50;
+    }
+    section#timeline article {
+      width: 100%;
+      margin: 0 0 20px 0;
+      position: relative;
+    }
+    section#timeline article:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    section#timeline article div.inner {
+      width: 40%;
+      float: left;
+      margin: 5px 0 0 0;
+      border-radius: 6px;
+    }
+    section#timeline article div.inner span.date {
+      display: block;
+      width: 80px;
+      height: 70px;
+      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -40px;
+      border-radius: 100%;
+      font-size: 70px;
+      font-family: 'Nanum Pen Script', cursive;
+      background: #2C3E50;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 0 0 7px #2C3E50;
+    }
+    section#timeline article div.inner span.date span {
+      display: block;
+      text-align: center;
+    }
+    section#timeline article div.inner span.date span.day {
+      font-size: 18px;
+    }
+    section#timeline article div.inner span.date span.month {
+      font-size: 18px;
+    }
+    section#timeline article div.inner span.date span.year {
+      font-size: 18px;
+    }
+    section#timeline article div.inner h2 {
+      padding: 15px;
+      margin: 0;
+      color: #fff;
+      font-size: 15px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+    }
+    section#timeline article div.inner h2:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: -5px;
+      width: 10px; 
+      height: 10px;
+      transform: rotate(-45deg);
+    }
+    section#timeline article div.inner p {
+      display: block;
+      padding: 15px;
+      margin: 0;
+      font-size: 14px;
+      background: #fff;
+      color: #656565;
+      border-radius: 0 0 6px 6px;
+    }
+    section#timeline article:nth-child(2n+2) div.inner {
+      float: right;
+    }
+    section#timeline article:nth-child(2n+2) div.inner h2:after {
+      left: -5px;
+    }
+    section#timeline article:nth-child(1) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(1) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(5) div.inner h2 {
+      background: #9b59b6;
+    }
+    section#timeline article:nth-child(5) div.inner h2:after {
+      background: #9b59b6;
+    }
+  }
+@media (min-width: 992px) {
+    .body{
+      width: 100vw;
+      height: 200vh;
+      background: #10111A;
+      display: grid;
+      grid-template-rows: 50% 50%;
+  }
+  .body>div{
+      display: grid;
+      grid-template-rows: 15% 85%;
+  }
+  .cabecera{
+      display: flex;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+  }
+  .body>div>section>h1{
+      font-size: 50px;
+      color: white;
+      font-family: 'Indie Flower', cursive;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .content{
+      display: grid;
+      grid-template-rows: 10% 90%;
+  }
+  .TypeSkills{
+      width: 30%;
+      height: 100%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(24%,2fr));
+      gap: 3%;
+  }
+  .TypeSkills>button{
+      font-size: 40px;
+      border-radius: 15px;
+      background: #2C3E50;
+      border: 0px;
+      color: white;
+  }
+  .TypeSkills>button>span{
+      display: block;
+      font-size: 23px;
+      font-family: 'Nanum Pen Script', cursive;
+  }
+  .contentSkills{
+      width: 90%;
+      height: 90%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(20%,2fr));
+      grid-template-rows: 23% 23% 23% 23%;
+      gap: 1% ;
+  }
+  .contentSkills>div{
+      font-size: 100px;
+      display: flex;
+      border-radius: 15px;
+      background: #e5e7e913;
+  }
+  .contentSkills>div>i{
+      color:rgb(209, 0, 0);
+      margin: auto auto;
+  }
+  .contentSkills>div:nth-child(1) i {
+      color:rgb(209, 0, 0);
+    }
+    .contentSkills>div:nth-child(2) i {
+      color: #0041e4;
+    }
+    .contentSkills>div:nth-child(3) i {
+      color: #ee710b;
+    }
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+    }
+    30%
+    {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+    }
+    50%
+    {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    }
+    65%
+    {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    }
+    80%
+    {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+    }
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
+    }
+  
+  section#timeline {
+      width: 90%;
+      margin: auto auto;
+      position: relative;
+    }
+    section#timeline:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin: 0 0 0 -1px;
+      width: 2px;
+      height: 100%;
+      background: #2C3E50;
+    }
+    section#timeline article {
+      width: 100%;
+      margin: 0 0 20px 0;
+      position: relative;
+    }
+    section#timeline article:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    section#timeline article div.inner {
+      width: 40%;
+      float: left;
+      margin: 5px 0 0 0;
+      border-radius: 6px;
+    }
+    section#timeline article div.inner span.date {
+      display: block;
+      width: 80px;
+      height: 70px;
+      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -40px;
+      border-radius: 100%;
+      font-size: 70px;
+      font-family: 'Nanum Pen Script', cursive;
+      background: #2C3E50;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 0 0 7px #2C3E50;
+    }
+    section#timeline article div.inner span.date span {
+      display: block;
+      text-align: center;
+    }
+    section#timeline article div.inner span.date span.day {
+      font-size: 20px;
+    }
+    section#timeline article div.inner span.date span.month {
+      font-size: 20px;
+    }
+    section#timeline article div.inner span.date span.year {
+      font-size: 20px;
+    }
+    section#timeline article div.inner h2 {
+      padding: 15px;
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+    }
+    section#timeline article div.inner h2:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: -5px;
+      width: 10px; 
+      height: 10px;
+      transform: rotate(-45deg);
+    }
+    section#timeline article div.inner p {
+      display: block;
+      padding: 15px;
+      margin: 0;
+      font-size: 14px;
+      background: #fff;
+      color: #656565;
+      border-radius: 0 0 6px 6px;
+    }
+    section#timeline article:nth-child(2n+2) div.inner {
+      float: right;
+    }
+    section#timeline article:nth-child(2n+2) div.inner h2:after {
+      left: -5px;
+    }
+    section#timeline article:nth-child(1) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(1) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(5) div.inner h2 {
+      background: #9b59b6;
+    }
+    section#timeline article:nth-child(5) div.inner h2:after {
+      background: #9b59b6;
+    }
+}
+@media (min-width: 1200px) {
+    .body{
+      width: 100vw;
+      height: 200vh;
+      background: #10111A;
+      display: grid;
+      grid-template-rows: 50% 50%;
+  }
+  .body>div{
+      display: grid;
+      grid-template-rows: 15% 85%;
+  }
+  .cabecera{
+      display: flex;
+      width: 90%;
+      height: 100%;
+      margin: auto;
+  }
+  .body>div>section>h1{
+      font-size: 60px;
+      color: white;
+      font-family: 'Indie Flower', cursive;
+      margin-top: auto;
+      margin-bottom: auto;
+  }
+  .content{
+      display: grid;
+      grid-template-rows: 10% 90%;
+  }
+  .TypeSkills{
+      width: 30%;
+      height: 100%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(24%,2fr));
+      gap: 3%;
+  }
+  .TypeSkills>button{
+      font-size: 40px;
+      border-radius: 15px;
+      background: #2C3E50;
+      border: 0px;
+      color: white;
+  }
+  .TypeSkills>button>span{
+      display: block;
+      font-size: 23px;
+      font-family: 'Nanum Pen Script', cursive;
+  }
+  .contentSkills{
+      width: 70%;
+      height: 90%;
+      margin: auto auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(20%,2fr));
+      grid-template-rows: 25% 25% 25%;
+      gap: 1% ;
+  }
+  .contentSkills>div{
+      font-size: 150px;
+      display: flex;
+      border-radius: 15px;
+      background: #e5e7e913;
+  }
+  .contentSkills>div>i{
+      color:rgb(209, 0, 0);
+      margin: auto auto;
+  }
+  .contentSkills>div:nth-child(1) i {
+      color:rgb(209, 0, 0);
+    }
+    .contentSkills>div:nth-child(2) i {
+      color: #0041e4;
+    }
+    .contentSkills>div:nth-child(3) i {
+      color: #ee710b;
+    }
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+    }
+    30%
+    {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+    }
+    50%
+    {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+    }
+    65%
+    {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    }
+    80%
+    {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+    }
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
+    }
+  
+  section#timeline {
+      width: 60%;
+      margin: auto auto;
+      position: relative;
+    }
+    section#timeline:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      margin: 0 0 0 -1px;
+      width: 2px;
+      height: 100%;
+      background: #2C3E50;
+    }
+    section#timeline article {
+      width: 100%;
+      margin: 0 0 20px 0;
+      position: relative;
+    }
+    section#timeline article:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+    section#timeline article div.inner {
+      width: 40%;
+      float: left;
+      margin: 5px 0 0 0;
+      border-radius: 6px;
+    }
+    section#timeline article div.inner span.date {
+      display: block;
+      width: 80px;
+      height: 70px;
+      padding: 5px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin: 0 0 0 -40px;
+      border-radius: 100%;
+      font-size: 70px;
+      font-family: 'Nanum Pen Script', cursive;
+      background: #2C3E50;
+      color: rgb(255, 255, 255);
+      border: 2px solid rgba(255,255,255,0.2);
+      box-shadow: 0 0 0 7px #2C3E50;
+    }
+    section#timeline article div.inner span.date span {
+      display: block;
+      text-align: center;
+    }
+    section#timeline article div.inner span.date span.day {
+      font-size: 20px;
+    }
+    section#timeline article div.inner span.date span.month {
+      font-size: 20px;
+    }
+    section#timeline article div.inner span.date span.year {
+      font-size: 20px;
+    }
+    section#timeline article div.inner h2 {
+      padding: 15px;
+      margin: 0;
+      color: #fff;
+      font-size: 20px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      border-radius: 6px 6px 0 0;
+      position: relative;
+    }
+    section#timeline article div.inner h2:after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: -5px;
+      width: 10px; 
+      height: 10px;
+      transform: rotate(-45deg);
+    }
+    section#timeline article div.inner p {
+      display: block;
+      padding: 15px;
+      margin: 0;
+      font-size: 14px;
+      background: #fff;
+      color: #656565;
+      border-radius: 0 0 6px 6px;
+    }
+    section#timeline article:nth-child(2n+2) div.inner {
+      float: right;
+    }
+    section#timeline article:nth-child(2n+2) div.inner h2:after {
+      left: -5px;
+    }
+    section#timeline article:nth-child(1) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(1) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(2) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(3) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2 {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(4) div.inner h2:after {
+      background: #255DEF;
+    }
+    section#timeline article:nth-child(5) div.inner h2 {
+      background: #9b59b6;
+    }
+    section#timeline article:nth-child(5) div.inner h2:after {
+      background: #9b59b6;
+    }
   }

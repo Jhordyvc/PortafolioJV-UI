@@ -57,35 +57,7 @@
     float: left;
     text-align: center;
 }
-  /**/
-  .menu{
-    width: 100vw;
-    height: 50px;
-    background: #10111A;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
-}
-.logo{
-    width: 100%;
-    height: 100%;
-}
-.logo>a{
-    font-size: 30px;
-    margin: 0px;
-    text-decoration: none;
-}
-.menu>div{
-    width: 85%;
-    height: 100%;
-    margin: auto auto;
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-.listMenu{
-    display:none;
-}
- @media (min-width: 768px) {
+@media (min-width: 768px) {
     .body{
         width: 100vw;
         height: 100vh;
@@ -144,80 +116,23 @@
         display: block;
         float: left;
         text-align: center;
-    }  
-    /**/
-    .menu{
-        width: 100vw;
-        height: 50px;
-        background: #10111A;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        overflow: hidden;
     }
-    .logo{
-        width: 100%;
-        height: 100%;
-    }
-    .logo>a{
-        font-size: 30px;
-        margin: 0px;
-        text-decoration: none;
-    }
-    .menu>div{
-        width: 85%;
-        height: 100%;
-        margin: auto auto;
-        display: grid;
-        grid-template-columns: 15% 85%;
-    }
-    .listMenu{
-        width: 100%;
-        height: 100%;
-        display: initial;
-    }
-    .listMenu>ul{
-        width: 100%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
-    }
-    .listMenu>ul>li{
-        width: 100%;
-        height: 100%;
-        list-style: none;
-    }
-    .listMenu>ul>li>a{
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: grid;
-        margin: auto auto;
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        font-family: 'Nanum Pen Script', cursive;
-    }
-    .listMenu>ul>li>a:hover{
-        background: #2C3E50;
-    }
-  }
+}
   
   /* escritorio normales */
-  @media (min-width: 992px) {
+@media (min-width: 992px) {
     .body{
         width: 100vw;
         height: 100vh;
         padding: 0px;
         margin: 0px;
-        background: #67cc15;
+        background: #10111A;
         display: grid;
         overflow: hidden;
     }
     .contenedor{
-        width: 90%;
-        height: 90%;
+        width: 60%;
+        height: 60%;
         margin: auto auto;
     }
     .contenedor>img{
@@ -260,67 +175,11 @@
         display: block;
         float: left;
         text-align: center;
-    }  /**/
-    .menu{
-        width: 100vw;
-        height: 50px;
-        background: #10111A;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        overflow: hidden;
-    }
-    .logo{
-        width: 100%;
-        height: 100%;
-    }
-    .logo>a{
-        font-size: 30px;
-        margin: 0px;
-        text-decoration: none;
-    }
-    .menu>div{
-        width: 85%;
-        height: 100%;
-        margin: auto auto;
-        display: grid;
-        grid-template-columns: 20% 80%;
-    }
-    .listMenu{
-        width: 100%;
-        height: 100%;
-        display: initial;
-    }
-    .listMenu>ul{
-        width: 100%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
-    }
-    .listMenu>ul>li{
-        width: 100%;
-        height: 100%;
-        list-style: none;
-    }
-    .listMenu>ul>li>a{
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: grid;
-        margin: auto auto;
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        font-family: 'Nanum Pen Script', cursive;
-    }
-    .listMenu>ul>li>a:hover{
-        background: #2C3E50;
-    }
-  }
+    } 
+}
   
   /* pantallas grandes */
-  @media (min-width: 1200px) {
+@media (min-width: 1200px) {
     .body{
         width: 100vw;
         height: 100vh;
@@ -381,137 +240,47 @@
         float: left;
         text-align: center;
     }
-    /**/
-    .menu{
-        width: 100vw;
-        height: 50px;
-        background: #10111A;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        overflow: hidden;
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
     }
-    .logo{
-        width: 100%;
-        height: 100%;
+    30%
+    {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
     }
-    .logo>a{
-        font-size: 30px;
-        margin: 0px;
-        text-decoration: none;
+    50%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
     }
-    .menu>div{
-        width: 85%;
-        height: 100%;
-        margin: auto auto;
-        display: grid;
-        grid-template-columns: 40% 60%;
+    65%
+    {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
     }
-    .listMenu{
-        width: 100%;
-        height: 100%;
-        display: initial;
+    80%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
     }
-    .listMenu>ul{
-        width: 100%;
-        height: 100%;
-        padding: 0px;
-        margin: 0px;
-        display: grid;
-        grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     }
-    .listMenu>ul>li{
-        width: 100%;
-        height: 100%;
-        list-style: none;
     }
-    .listMenu>ul>li>a{
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        display: grid;
-        margin: auto auto;
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        font-family: 'Nanum Pen Script', cursive;
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
     }
-    .listMenu>ul>li>a:hover{
-        background: #2C3E50;
-    }
-@-webkit-keyframes swing
-{
-15%
-{
--webkit-transform: translateX(4px);
-transform: translateX(4px);
 }
-30%
-{
--webkit-transform: translateX(-4px);
-transform: translateX(-4px);
-}
-50%
-{
--webkit-transform: translateX(2px);
-transform: translateX(2px);
-}
-65%
-{
--webkit-transform: translateX(-2px);
-transform: translateX(-2px);
-}
-80%
-{
--webkit-transform: translateX(2px);
-transform: translateX(2px);
-}
-100%
-{
--webkit-transform: translateX(0);
-transform: translateX(0);
-}
-}
-@keyframes swing
-{
-15%
-{
--webkit-transform: translateX(4px);
-transform: translateX(4px);
-}
-30%
-{
--webkit-transform: translateX(-4px);
-transform: translateX(-4px);
-}
-50%
-{
--webkit-transform: translateX(1px);
-transform: translateX(1px);
-}
-65%
-{
--webkit-transform: translateX(-2px);
-transform: translateX(-2px);
-}
-80%
-{
--webkit-transform: translateX(1px);
-transform: translateX(1px);
-}
-100%
-{
--webkit-transform: translateX(0);
-transform: translateX(0);
-}
-}
-.swing:hover{
-    -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
-    -webkit-animation-iteration-count: 1;
-    animation-iteration-count: 1;
-    cursor: pointer;
-}
-  }
 
 
 
