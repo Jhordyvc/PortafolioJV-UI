@@ -1,4 +1,4 @@
-.body{
+/*.body{
     width: 100vw;
     height: 100vh;
     background: #D0D3D4;
@@ -91,4 +91,101 @@
     transform: scale(1.05);
     box-shadow: #10111A 0px 0px 10px;
     transition: all 0.8s;
+}*/
+@media (min-width: 768px) {
+    .body{
+        width: 100vw;
+        height: 100vh;
+        background: #D0D3D4;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-rows: 7% 93%;
+    }
+    .cabecera{
+        width: 90%;
+        height: 100%;
+        margin: auto auto;
+        position: relative;
+    }
+    .cabecera>h1{
+        font-size: 35px;
+        font-weight: bold;
+        left: 0px;
+        bottom: 0px;
+        margin: 0px;
+        color: #10111A; 
+        position: absolute;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .cabecera>a{
+        text-decoration: none;
+        color: #10111A;
+        font-weight: bold;
+        right: 0px;
+        bottom: 0px;
+        font-size: 20px;
+        position: absolute;
+        font-family: 'Indie Flower', cursive;
+    }
+    .itemCard{
+        width: 95%;
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+        margin: auto auto;
+        grid-template-columns: 31% 31% 31%;
+        column-gap: 2%;
+    }
+    .itemCard>section{
+        width: 100%;
+        height: 80%;
+        border-radius: 30px;
+        margin: auto auto;
+        display: grid;
+        background: #10111A;
+        grid-template-rows: 60% 40%;
+        box-shadow: #10111A 0px 0px 10px;
+        color: whitesmoke;
+        border: 1px solid orange;
+    }
+    .itemCard>section>article>img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .itemCard>section>article>h1{
+        font-weight: bold;
+        font-size: 30px;
+        margin: 0px;
+        text-align: center;
+        font-family: 'Indie Flower', cursive;
+    }
+    .itemCard>section>article>p{
+        margin: 3px;
+        font-family: 'M PLUS Code Latin', sans-serif;
+        text-align: center;
+    }
+    .itemCard>section>article>a{
+        display: inline-block;
+        background: #2C3E50;
+        border: 0px;
+        color: white;
+        text-decoration: none;
+        padding: 13px;
+        border-radius: 10px;
+        text-align: center;
+        margin: auto auto;
+        display: block;
+        width: 50%;
+        font-family: 'Indie Flower', cursive;
+    }
+    .content{
+        padding: 10px;
+    }
+    .itemCard>section:hover{
+        transform: scale(1.05);
+        box-shadow: #10111A 0px 0px 10px;
+        transition: all 0.8s;
+    }
 }

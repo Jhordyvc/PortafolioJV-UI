@@ -1,104 +1,221 @@
 .body{
     width: 100vw;
-    height: 100vh;
-    padding: 0px;
-    margin: 0px;
+    height: 200vh;
     background: #10111A;
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 50% 50%;
 }
-.tittle{
-    width: 80%;
-    height: 100%;
-    margin: auto auto;
+.body>div{
+    display: grid;
+    grid-template-rows: 10% 90%;
+}
+.cabecera{
     display: flex;
+    width: 90%;
+    height: 100%;
+    margin: auto;
 }
-.tittle>h1{
+.body>div>section>h1{
+    font-size: 35px;
+    color: white;
+    font-family: 'Indie Flower', cursive;
     margin-top: auto;
     margin-bottom: auto;
-    font-weight: bold;
-    font-size: 60px;
-    display: block;
-    color: white;
-    font-family: 'Nanum Pen Script', cursive;
 }
 .content{
+    display: flex;
+}
+.contentSkills{
     width: 90%;
     height: 90%;
     margin: auto auto;
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: repeat(auto-fill,minmax(20%,2fr));
+    grid-template-rows: 25% 25% 25%;
+    gap: 1%;
 }
-.left{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 33.3% 33.3% 33.3%;
-}
-.left>article{
-    width: 100%;
-    height: 100%;
+.contentSkills>div{
+    font-size: 150px;
     display: flex;
+    border-radius: 15px;
+    background: #e5e7e913;
 }
-.left>article>img{
-    width: 60%;
-    height: 60%;
-    margin: auto auto; 
-}
-.rigth{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(20%,3fr));
-    column-gap: 5%;
-    row-gap: 5%;
-}
-.rigth>article{
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    color: white;
-    background: red;
-}
-.rigth>article>img{
-    width: 80%;
-    height: 80%;
-}
-/*.body{
-    width: 100vw;
-    height: 100vh;
-    background: #F3F6FD;
-    padding: 0px;
-    margin: 0px;
-    display: grid;
-    grid-template-columns: 100%;
-}
-div>section{
-    width: 80%;
-    height: 100vh;
-    margin: auto auto; 
-    display: grid;
-    grid-template-columns: 50% 50%;
-}
-div>section>article{
-    border: 1px solid red;
-    display: flex;
-}
-.circleSkill{
+.contentSkills>div>i{
+    color:rgb(209, 0, 0);
     margin: auto auto;
-    box-shadow: 1px 1px 10px #808B96;
+}
+.contentSkills>div:nth-child(1) i {
+    color:rgb(209, 0, 0);
+  }
+  .contentSkills>div:nth-child(2) i {
+    color: #0041e4;
+  }
+  .contentSkills>div:nth-child(3) i {
+    color: #ee710b;
+  }
+  @keyframes swing
+  {
+  15%
+  {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+  }
+  30%
+  {
+  -webkit-transform: translateX(-5px);
+  transform: translateX(-5px);
+  }
+  50%
+  {
+  -webkit-transform: translateX(3px);
+  transform: translateX(3px);
+  }
+  65%
+  {
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  }
+  80%
+  {
+  -webkit-transform: translateX(2px);
+  transform: translateX(2px);
+  }
+  100%
+  {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+  }
+  .swing:hover{
+      -webkit-animation: swing 1s ease;
+      animation: swing 1s ease;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+      cursor: pointer;
+  }
+
+section#timeline {
     width: 90%;
-    height: 80%;
-    border-radius: 50%;
+    margin: auto auto;
     position: relative;
-}
-.circleSkill>article{
+  }
+  section#timeline:before {
+    content: '';
+    display: block;
     position: absolute;
-    width: 20%;
-    height: 19%;
-    border-radius: 50%;
-    box-shadow: 1px 1px 10px #808B96;
-}
-.circleSkill>article>img{
-    width: 100%;
+    left: 50%;
+    top: 0;
+    margin: 0 0 0 -1px;
+    width: 2px;
     height: 100%;
+    background: #2C3E50;
+  }
+  section#timeline article {
+    width: 100%;
+    margin: 0 0 20px 0;
+    position: relative;
+  }
+  section#timeline article:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  section#timeline article div.inner {
+    width: 40%;
+    float: left;
+    margin: 5px 0 0 0;
+    border-radius: 6px;
+  }
+  section#timeline article div.inner span.date {
+    display: block;
+    width: 80px;
+    height: 70px;
+    padding: 5px 0;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0 0 0 -40px;
     border-radius: 100%;
-}*/
+    font-size: 70px;
+    font-family: 'Nanum Pen Script', cursive;
+    background: #2C3E50;
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(255,255,255,0.2);
+    box-shadow: 0 0 0 7px #2C3E50;
+  }
+  section#timeline article div.inner span.date span {
+    display: block;
+    text-align: center;
+  }
+  section#timeline article div.inner span.date span.day {
+    font-size: 20px;
+  }
+  section#timeline article div.inner span.date span.month {
+    font-size: 20px;
+  }
+  section#timeline article div.inner span.date span.year {
+    font-size: 20px;
+  }
+  section#timeline article div.inner h2 {
+    padding: 15px;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+  }
+  section#timeline article div.inner h2:after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 10px; 
+    height: 10px;
+    transform: rotate(-45deg);
+  }
+  section#timeline article div.inner p {
+    padding: 15px;
+    margin: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #656565;
+    border-radius: 0 0 6px 6px;
+  }
+  section#timeline article:nth-child(2n+2) div.inner {
+    float: right;
+  }
+  section#timeline article:nth-child(2n+2) div.inner h2:after {
+    left: -5px;
+  }
+  section#timeline article:nth-child(1) div.inner h2 {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(1) div.inner h2:after {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(2) div.inner h2 {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(2) div.inner h2:after {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(3) div.inner h2 {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(3) div.inner h2:after {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(4) div.inner h2 {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(4) div.inner h2:after {
+    background: #255DEF;
+  }
+  section#timeline article:nth-child(5) div.inner h2 {
+    background: #9b59b6;
+  }
+  section#timeline article:nth-child(5) div.inner h2:after {
+    background: #9b59b6;
+  }
