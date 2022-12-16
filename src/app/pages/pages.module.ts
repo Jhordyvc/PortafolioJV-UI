@@ -9,6 +9,7 @@ import { CertificateComponent } from './certificate/certificate.component';
 import { PrincipalComponent } from './principal/principal.component';
 import { SkillComponent } from './skill/skill.component';
 import { PortadaComponent } from './portada/portada.component';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PortadaComponent } from './portada/portada.component';
     RouterModule,
     CommonModule,
     FormsModule,
-    ComponentModule
+    ComponentModule,
+    NgxTypedJsModule
   ],exports:[RouterModule,ProjectsComponent, CertificateComponent]
 })
 export class PagesModule { }

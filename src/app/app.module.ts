@@ -5,6 +5,7 @@ import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PagesModule } from '../app/pages/pages.module';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 
 
@@ -16,7 +17,8 @@ import { PagesModule } from '../app/pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    PagesModule
+    PagesModule,
+    NgxTypedJsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
