@@ -4,16 +4,22 @@
     padding: 0em;
     margin: 0em;
     background: #10111A;
+    overflow: hidden;
+}
+.portada{
+    width: 100vw;
+    height: 94vh;
+    margin-top: 0em;
     display: grid;
 }
 .contenedor{
-    width: 80%;
-    height: 55%;
+    width: 80vw;
+    height: 100%;
     margin: auto auto;
 }
 .contenedor>img{
-    width: 12em;
-    height: 12em;
+    width: 15em;
+    height: 15em;
     margin-left: auto;
     margin-right: auto;
     filter: drop-shadow(-0em -0em 2em #2C3E50);
@@ -23,27 +29,134 @@
     margin-right: auto;
 }
 .contenedor>h1{
-    font-size: 3em;
+    font-size: 4em;
     text-align: center;
     color: white;
     font-family: 'Indie Flower', cursive;
     margin: 0em;
 }
 .contenedor>p{
-    font-size: 1.5em;
+    font-size: 2.5em;
     text-align: center;
     color: white;
     font-family: 'Nanum Pen Script', cursive;
     margin: 0px;
 }
 .contenedor>ul{
-    width: 80%;
+    width: 15em;
     display: block;
     margin-left: auto;
     margin-right: auto;
     padding: 0em;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 1em;
+}
+.contenedor>ul>li{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.contenedor>ul>li>a{
+    color: white;
+    font-size: 3em;
+    display: block;
+    float: left;
+    text-align: center;
+    
+}
+@keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+    }
+    30%
+    {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+    }
+    50%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+    }
+    65%
+    {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+    }
+    80%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+    }
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
+    }
+
+@media (min-width: 768px) {
+    .body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0em;
+        margin: 0em;
+        background: #10111A;
+        overflow: hidden;
+    }
+.portada{
+    width: 100vw;
+    height: 94vh;
+    margin-top: 0em;
+    display: grid;
+}    
+.contenedor{
+    width: 80%;
+    height: 70%;
+    margin: auto auto;
+}
+.contenedor>img{
+    width: 13em;
+    height: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    filter: drop-shadow(-0em -0em 2em #2C3E50);
+    border-radius: 50%;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenedor>h1{
+    font-size: 4em;
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    margin: 0em;
+}
+.contenedor>p{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    font-family: 'Nanum Pen Script', cursive;
+    margin: 0px;
+}
+.contenedor>ul{
+    width: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em;
+    text-align: center;
+    margin-top: 1em;
 }
 .contenedor>ul>li{
     display: grid;
@@ -55,88 +168,73 @@
     display: block;
     float: left;
     text-align: center;
-}
-@media (min-width: 768px) {
-    .body{
-        width: 100vw;
-        height: 100vh;
-        padding: 0em;
-        margin: 0em;
-        background: #10111A;
-        display: grid;
-        overflow: hidden;
     }
-    .contenedor{
-        width: 70%;
-        height: 70%;
-        margin: auto auto;
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
     }
-    .contenedor>img{
-        width: 30em;
-        height: 30em;
-        margin-left: auto;
-        margin-right: auto;
-        filter: drop-shadow(-0em -0em 2em #2C3E50);
-        border-radius: 50%;
-        display:block;
-        margin-left: auto;
-        margin-right: auto;
+    30%
+    {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
     }
-    .contenedor>h1{
-        font-size: 5em;
-        text-align: center;
-        color: white;
-        font-family: 'Indie Flower', cursive;
-        margin: 0em;
+    50%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
     }
-    .contenedor>p{
-        font-size: 3em;
-        text-align: center;
-        color: white;
-        font-family: 'Nanum Pen Script', cursive;
-        margin: 0em;
+    65%
+    {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
     }
-    .contenedor>ul{
-        width: 60%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0em;
-        text-align: center;
-        margin-top: 5%;
+    80%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
     }
-    .contenedor>ul>li{
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     }
-    .contenedor>ul>li>a{
-        color: white;
-        font-size: 4em;
-        display: block;
-        float: left;
-        text-align: center;
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
     }
 }
-  
-  /* escritorio normales */
+ 
+/*escritorio normales*/ 
 @media (min-width: 992px) {
     .body{
         width: 100vw;
         height: 100vh;
         padding: 0em;
         margin: 0em;
-        background: #10111A;;
-        display: grid;
+        background: #10111A;
         overflow: hidden;
     }
+    .portada{
+    width: 100vw;
+    height: 94vh;
+    margin-top: 0em;
+    display: grid;
+    }
     .contenedor{
-        width: 60%;
-        height: 60%;
+        width: 80%;
+        height: 70%;
         margin: auto auto;
     }
     .contenedor>img{
-        width: 20em;
-        height: 20em;
+        width: 12em;
+        height: 12em;
         margin-left: auto;
         margin-right: auto;
         filter: drop-shadow(-0em -0em 1em #2C3E50);
@@ -146,21 +244,21 @@
         margin-right: auto;
     }
     .contenedor>h1{
-        font-size: 5em;
+        font-size: 4em;
         text-align: center;
         color: white;
         margin: 0em;
     }
     .contenedor>p{
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         color: white;
         font-family: 'Nanum Pen Script', cursive;
         margin: 0em;
-        margin-bottom: 5%;
+        margin-bottom: 0.5em;
     }
     .contenedor>ul{
-        width: 60%;
+        width: 30%;
         margin: auto;
         display: block;
     }
@@ -170,14 +268,53 @@
     }
     .contenedor>ul>li>a{
         color: white;
-        font-size: 4em;
+        font-size: 2em;
         display: block;
         float: left;
         text-align: center;
     } 
+    @keyframes swing
+    {
+    15%
+    {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
+    }
+    30%
+    {
+    -webkit-transform: translateX(-4px);
+    transform: translateX(-4px);
+    }
+    50%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+    }
+    65%
+    {
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-2px);
+    }
+    80%
+    {
+    -webkit-transform: translateX(1px);
+    transform: translateX(1px);
+    }
+    100%
+    {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    }
+    }
+    .swing:hover{
+        -webkit-animation: swing 1s ease;
+        animation: swing 1s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor: pointer;
+    }
 }
-  
-  /* pantallas grandes */
+/*pantallas grandes*/ 
 @media (min-width: 1200px) {
     .body{
         width: 100vw;
@@ -185,12 +322,17 @@
         padding: 0em;
         margin: 0em;
         background: #10111A;
-        display: grid;
         overflow: hidden;
+    }
+    .portada{
+        width: 100vw;
+        height: 94vh;
+        margin-top: 0em;
+        display: grid;
     }
     .contenedor{
         width: 80%;
-        height: 80%;
+        height: 100%;
         margin: auto auto;
     }
     .contenedor>img{
@@ -280,6 +422,3 @@
         cursor: pointer;
     }
 }
-
-
-

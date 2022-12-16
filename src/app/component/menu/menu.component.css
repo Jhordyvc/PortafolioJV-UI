@@ -1,40 +1,36 @@
 /**/
 .menu{
     width: 100vw;
-    height: 50px;
+    height: 6vh;
     background: #10111A;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    overflow: hidden;
+    padding-left: 1.5em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
 .logo{
-    width: 100%;
+    width: 4vw;
     height: 100%;
+    float: left;
 }
 .logo>a{
-    font-size: 30px;
-    margin: 0px;
+    font-size: 1.5em;
+    margin: 0em;
     text-decoration: none;
 }
-.menu>div{
-    width: 85%;
-    height: 100%;
-    margin: auto auto;
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
 .listMenu{
-    width: 100%;
+    width: 60vw;
     height: 100%;
-    display: initial;
+    float: right;
+    visibility: hidden;
+    margin-right: 4em;
 }
 .listMenu>ul{
     width: 100%;
     height: 100%;
-    padding: 0px;
-    margin: 0px;
+    padding: 0em;
+    margin: 0em;
     display: grid;
-    grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+    grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
 }
 .listMenu>ul>li{
     width: 100%;
@@ -43,15 +39,182 @@
 }
 .listMenu>ul>li>a{
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     display: grid;
     margin: auto auto;
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 1.5em;
     font-family: 'Nanum Pen Script', cursive;
 }
 .listMenu>ul>li>a:hover{
     background: #2C3E50;
+}
+
+
+
+@media (min-width: 768px) {
+    .menu{
+        width: 100vw;
+        height: 6vh;
+        background: #10111A;
+        padding-left: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .logo{
+        width: 4vw;
+        height: 100%;
+        float: left;
+    }
+    .logo>a{
+        font-size: 1.5em;
+        margin: 0em;
+        text-decoration: none;
+    }
+    .listMenu{
+        width: 75vw;
+        height: 100%;   
+        visibility: visible;
+        float: right;
+        margin-right: 4em;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0em;
+        margin: 0em;
+        display: grid;
+        grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }  
+}
+
+@media (min-width: 992px) {
+    .menu{
+        width: 100vw;
+        height: 6vh;
+        background: #10111A;
+        padding-left: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .logo{
+        width: 4vw;
+        height: 100%;
+        float: left;
+    }
+    .logo>a{
+        font-size: 1.5em;
+        margin: 0em;
+        text-decoration: none;
+    }
+    .listMenu{
+        width: 58vw;
+        height: 100%;   
+        visibility: visible;
+        float: right;
+        margin-right: 4em;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0em;
+        margin: 0em;
+        display: grid;
+        grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menu{
+        width: 100vw;
+        height: 6vh;
+        background: #10111A;
+        padding-left: 1.5em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+    }
+    .logo{
+        width: 4vw;
+        height: 100%;
+        float: left;
+    }
+    .logo>a{
+        font-size: 1.5em;
+        margin: 0em;
+        text-decoration: none;
+    }
+    .listMenu{
+        width: 60vw;
+        height: 100%;   
+        visibility: visible;
+        float: right;
+        margin-right: 4em;
+    }
+    .listMenu>ul{
+        width: 100%;
+        height: 100%;
+        padding: 0em;
+        margin: 0em;
+        display: grid;
+        grid-template-columns: 16.7% 16.7% 16.7% 16.7% 16.7% 16.7%;
+    }
+    .listMenu>ul>li{
+        width: 100%;
+        height: 100%;
+        list-style: none;
+    }
+    .listMenu>ul>li>a{
+        text-align: center;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        display: grid;
+        margin: auto auto;
+        text-decoration: none;
+        color: white;
+        font-size: 1.5em;
+        font-family: 'Nanum Pen Script', cursive;
+    }
+    .listMenu>ul>li>a:hover{
+        background: #2C3E50;
+    }  
 }
