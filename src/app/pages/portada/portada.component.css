@@ -1,69 +1,80 @@
-.body{
-    width: 100vw;
-    height: 100vh;
-    padding: 0em;
-    margin: 0em;
-    background: #10111A;
-    overflow: hidden;
-}
-.portada{
-    width: 100vw;
-    height: 94vh;
-    margin-top: 0em;
-    display: grid;
-}
-.contenedor{
-    width: 80vw;
-    height: 100%;
-    margin: auto auto;
-}
-.contenedor>img{
-    width: 15em;
-    height: 15em;
-    margin-left: auto;
-    margin-right: auto;
-    filter: drop-shadow(-0em -0em 2em #2C3E50);
-    border-radius: 50%;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.contenedor>h1{
-    font-size: 4em;
-    text-align: center;
-    color: white;
-    font-family: 'Indie Flower', cursive;
-    margin: 0em;
-}
-.contenedor>p{
-    font-size: 2.5em;
-    text-align: center;
-    color: white;
-    font-family: 'Nanum Pen Script', cursive;
-    margin: 0px;
-}
-.contenedor>ul{
-    width: 15em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0em;
-    text-align: center;
-    margin-top: 1em;
-}
-.contenedor>ul>li{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.contenedor>ul>li>a{
-    color: white;
-    font-size: 3em;
-    display: block;
-    float: left;
-    text-align: center;
-    
-}
-@keyframes swing
+    .body{
+        width: 100vw;
+        height: 100vh;
+        padding: 0em;
+        margin: 0em;
+        background: orange;
+        overflow: hidden;
+    }
+    .portada{
+        width: 100vw;
+        height: 94vh;
+        margin-top: 0em;
+        display: grid;
+    }
+    .contenedor{
+        width: 100vw;
+        height: 90%;
+        margin: auto auto;
+        display: grid;
+        grid-template-rows: 50% 15% 10% 15%;
+    }
+    .contenedor>article{
+        display: grid;
+        place-content: center;
+    }
+    .contenedor>article>img{
+        width: 18em;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(-0em -0em 2em #2C3E50);
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor>article>h1{
+        font-size: 2.8em;
+        text-align: center;
+        color: white;
+        margin: auto auto;
+        font-family: 'Indie Flower', cursive;
+        margin: 0em;
+    }
+
+    .typing{
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+        margin: 0em;
+        margin-bottom: 2%;
+    }
+    article>ul{
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0em;
+        text-align: center;
+        margin-top: 1em;
+    }
+    article>ul>li{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    article>ul>li>a{
+        color: white;
+        font-size: 3em;
+        display: block;
+        float: left;
+        text-align: center;
+        
+    }
+    @keyframes swing
     {
     15%
     {
@@ -110,64 +121,76 @@
         height: 100vh;
         padding: 0em;
         margin: 0em;
-        background: #10111A;
+        background: greenyellow;
         overflow: hidden;
     }
-.portada{
-    width: 100vw;
-    height: 94vh;
-    margin-top: 0em;
-    display: grid;
-}    
-.contenedor{
-    width: 80%;
-    height: 70%;
-    margin: auto auto;
-}
-.contenedor>img{
-    width: 13em;
-    height: 13em;
-    margin-left: auto;
-    margin-right: auto;
-    filter: drop-shadow(-0em -0em 2em #2C3E50);
-    border-radius: 50%;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.contenedor>h1{
-    font-size: 4em;
-    text-align: center;
-    color: white;
-    font-family: 'Indie Flower', cursive;
-    margin: 0em;
-}
-.contenedor>p{
-    font-size: 2em;
-    text-align: center;
-    color: white;
-    font-family: 'Nanum Pen Script', cursive;
-    margin: 0px;
-}
-.contenedor>ul{
-    width: 15em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0em;
-    text-align: center;
-    margin-top: 1em;
-}
-.contenedor>ul>li{
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-}
-.contenedor>ul>li>a{
-    color: white;
-    font-size: 2em;
-    display: block;
-    float: left;
-    text-align: center;
+    .portada{
+        width: 100vw;
+        height: 94vh;
+        margin-top: 0em;
+        display: grid;
+    }
+    .contenedor{
+        width: 100vw;
+        height: 90%;
+        margin: auto auto;
+        display: grid;
+        grid-template-rows: 50% 15% 10% 15%;
+    }
+    .contenedor>article{
+        display: grid;
+        place-content: center;
+    }
+    .contenedor>article>img{
+        width: 18em;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        filter: drop-shadow(-0em -0em 2em #2C3E50);
+        border-radius: 50%;
+        display:block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contenedor>article>h1{
+        font-size: 2.8em;
+        text-align: center;
+        color: white;
+        margin: auto auto;
+        font-family: 'Indie Flower', cursive;
+        margin: 0em;
+    }
+
+    .typing{
+        width: 100%;
+        height: 100%;
+        font-size: 2em;
+        text-align: center;
+        color: white;
+        font-family: 'Nanum Pen Script', cursive;
+        margin: 0em;
+        margin-bottom: 2%;
+    }
+    article>ul{
+        width: 15em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0em;
+        text-align: center;
+        margin-top: 1em;
+    }
+    article>ul>li{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    article>ul>li>a{
+        color: white;
+        font-size: 3em;
+        display: block;
+        float: left;
+        text-align: center;
+        
     }
     @keyframes swing
     {
@@ -218,61 +241,77 @@
         height: 100vh;
         padding: 0em;
         margin: 0em;
-        background: #10111A;
+        background: red;
         overflow: hidden;
     }
     .portada{
-    width: 100vw;
-    height: 94vh;
-    margin-top: 0em;
-    display: grid;
+        width: 100vw;
+        height: 94vh;
+        margin-top: 0em;
+        display: grid;
     }
     .contenedor{
-        width: 80%;
-        height: 70%;
+        width: 100vw;
+        height: 90%;
         margin: auto auto;
+        display: grid;
+        grid-template-rows: 50% 15% 10% 15%;
     }
-    .contenedor>img{
-        width: 12em;
-        height: 12em;
+    .contenedor>article{
+        display: grid;
+        place-content: center;
+    }
+    .contenedor>article>img{
+        width: 18em;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
-        filter: drop-shadow(-0em -0em 1em #2C3E50);
+        filter: drop-shadow(-0em -0em 2em #2C3E50);
         border-radius: 50%;
         display:block;
         margin-left: auto;
         margin-right: auto;
     }
-    .contenedor>h1{
-        font-size: 4em;
+    .contenedor>article>h1{
+        font-size: 2.8em;
         text-align: center;
         color: white;
+        margin: auto auto;
+        font-family: 'Indie Flower', cursive;
         margin: 0em;
     }
-    .contenedor>p{
+
+    .typing{
+        width: 100%;
+        height: 100%;
         font-size: 2em;
         text-align: center;
         color: white;
         font-family: 'Nanum Pen Script', cursive;
         margin: 0em;
-        margin-bottom: 0.5em;
+        margin-bottom: 2%;
     }
-    .contenedor>ul{
-        width: 30%;
-        margin: auto;
+    article>ul{
+        width: 15em;
         display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0em;
+        text-align: center;
+        margin-top: 1em;
     }
-    .contenedor>ul>li{
+    article>ul>li{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
-    .contenedor>ul>li>a{
+    article>ul>li>a{
         color: white;
-        font-size: 2em;
+        font-size: 3em;
         display: block;
         float: left;
         text-align: center;
-    } 
+        
+    }
     @keyframes swing
     {
     15%
@@ -321,7 +360,7 @@
         height: 100vh;
         padding: 0em;
         margin: 0em;
-        background: #10111A;
+        background: blueviolet;
         overflow: hidden;
     }
     .portada{
@@ -331,13 +370,19 @@
         display: grid;
     }
     .contenedor{
-        width: 80%;
-        height: 100%;
+        width: 100vw;
+        height: 90%;
         margin: auto auto;
+        display: grid;
+        grid-template-rows: 50% 15% 10% 15%;
     }
-    .contenedor>img{
-        width: 16em;
-        height: 16em;
+    .contenedor>article{
+        display: grid;
+        place-content: center;
+    }
+    .contenedor>article>img{
+        width: 18em;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
         filter: drop-shadow(-0em -0em 2em #2C3E50);
@@ -346,14 +391,18 @@
         margin-left: auto;
         margin-right: auto;
     }
-    .contenedor>h1{
-        font-size: 5em;
+    .contenedor>article>h1{
+        font-size: 2.8em;
         text-align: center;
         color: white;
+        margin: auto auto;
         font-family: 'Indie Flower', cursive;
         margin: 0em;
     }
-    .contenedor>p{
+
+    .typing{
+        width: 100%;
+        height: 100%;
         font-size: 2em;
         text-align: center;
         color: white;
@@ -361,25 +410,26 @@
         margin: 0em;
         margin-bottom: 2%;
     }
-    .contenedor>ul{
-        width: 30%;
+    article>ul{
+        width: 15em;
         display: block;
         margin-left: auto;
         margin-right: auto;
         padding: 0em;
         text-align: center;
-        margin: auto;
+        margin-top: 1em;
     }
-    .contenedor>ul>li{
+    article>ul>li{
         display: grid;
         grid-template-columns: 25% 25% 25% 25%;
     }
-    .contenedor>ul>li>a{
+    article>ul>li>a{
         color: white;
         font-size: 3em;
         display: block;
         float: left;
         text-align: center;
+        
     }
     @keyframes swing
     {
